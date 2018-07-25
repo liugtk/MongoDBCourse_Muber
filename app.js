@@ -1,9 +1,8 @@
 const express = require('express');
+const routes = require('./routes/routes'); // routes here is a function
+
 const app = express();
 
-app.get('/api',(req, res)=>{    // call back function with req and res
-        res.send({message: "hi there"});
-});
-
+routes(app); // attach the app to the route
 
 module.exports = app;
