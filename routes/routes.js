@@ -7,4 +7,5 @@ const DriversController = require('../controllers/drivers_controller'); // funct
 module.exports = (app)=>
     {
         app.get('/api', DriversController.greeting);
+        app.post('/api/drivers', DriversController.create);
     };
