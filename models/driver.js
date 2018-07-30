@@ -1,4 +1,4 @@
-const mongoose = requrie('mongoose');
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
@@ -8,7 +8,7 @@ const DriverSchema = new Schema({
       required: true,
     },
     driving : {
-        type: boolean,
+        type: Boolean,
         default: false,
     }
     // location: [Number]
