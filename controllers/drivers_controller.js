@@ -27,6 +27,9 @@ module.exports = {
         const driverId = req.params.id;
         const driverprops = req.body;
 
+        Driver.findByIdAndRemove({_id:driverId})
+            .then(driver =>res.status(204).send(driver))
+            .catch(next)
   }
 
 };

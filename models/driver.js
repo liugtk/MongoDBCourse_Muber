@@ -2,6 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 
+
 const DriverSchema = new Schema({
     email: {
       type: String,
@@ -14,6 +15,6 @@ const DriverSchema = new Schema({
     // location: [Number]
 });
 
-const Driver = mongoose.model('driver', DriverSchema);
+const Driver = mongoose.model(' ', DriverSchema);
 
 module.exports = Driver;
